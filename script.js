@@ -73,7 +73,7 @@ function E (x){
 	return x;
 }
 
-function F (x){
+function F (){
 	x = ("I like ");
 	return x;
 }
