@@ -20,7 +20,7 @@ function two (x){
 function three (x){
 	return x*x;
 }
-console.log(one(two(three(3))));
+console.log(three(two(one(3))));
 
 function A(x){
 if ( x == true ){
@@ -63,18 +63,41 @@ A(B(C(G())));
 
 
 
-function D (x){
-	x = x + (" gravy!");
-	return x;
+function D (){
+	x = x + (" ham!");
+  return x;
 }
 
-function E (x){
-	x = x + ("biscuits and");
-	return x;
+function E (){
+	x = x + ("green eggs and ");	
+  return x;
+  
 }
 
 function F (){
-	x = ("I like ");
-	return x;
+	x = ("I do not like ");
+   return x;
 }
-console.log(D(E(F())));
+
+window.onload = function (){
+	document.getElementById("tryThem").innerHTML = D(E(F()));
+}
+function button() {
+    document.getElementById("hereOrThere").innerHTML = H(I(J()));
+}
+
+function H (){
+	x = x + ("Sam I Am!");
+  return x;
+}
+
+function I (){
+	x = x + ("them, ");	
+  return x;
+  
+}
+
+function J (){
+	x = ("I do not like ");
+   return x;
+}
