@@ -11,16 +11,16 @@ var three = function (x){
 
 console.log(one(two(three(2))));
 
-function one (x){
+function four (x){
 	return x*x;
 }
-function two (x){
+function five (x){
 	return x*x;
 }
-function three (x){
+function six (x){
 	return x*x;
 }
-console.log(three(two(one(3))));
+console.log(six(five(four(3))));
 
 function A(x){
 if ( x == true ){
